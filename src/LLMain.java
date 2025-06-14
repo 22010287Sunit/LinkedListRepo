@@ -28,7 +28,7 @@ public class LLMain {
 		
 		impl1.displayLL(node1);
 		
-		impl1.InsertAtBeginning(node1, node5);
+		node1 = impl1.InsertAtBeginning(node1, node5);
 		System.out.println("");
 		impl1.displayLL(node1);
 		
