@@ -49,7 +49,7 @@ public class LLMethods {
 			return head;
 		}
 		
-		newNode.next = temp.next;
+		newNode.next = temp.next; // 
 		temp.next = newNode;
 		
 		return head;
