@@ -6,6 +6,7 @@ public class LLMain {
 		Node node3 = new Node(50);
 		Node node4 = new Node();
 		Node node5 = new Node(755);
+		Node node6 = new Node(745);
 		
 		node4.data = 60;
 		node1.next = node2;
@@ -27,12 +28,16 @@ public class LLMain {
 		}
 		
 		impl1.displayLL(node1);
-		
+		//Insert at start with node parameter
 		node1 = impl1.InsertAtBeginning(node1, node5);
 		System.out.println("");
 		impl1.displayLL(node1);
-		
+		//Insert at start with data parameter (Method overriding)
 		node1 = impl1.InsertAtBeginning(node1, 344);
+		System.out.println("");
+		impl1.displayLL(node1);
+		// Insert at given position
+		impl1.InsertAtGivenPosition(node1, node6, 4);
 		System.out.println("");
 		impl1.displayLL(node1);
 		

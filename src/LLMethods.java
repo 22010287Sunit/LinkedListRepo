@@ -32,5 +32,27 @@ public class LLMethods {
 		newHead.next = head;
 		return newHead;
 	}
+	
+	public Node InsertAtGivenPosition(Node head, Node newNode, int pos) {
+		if (pos == 0) {
+			newNode.next = head;
+			return newNode;
+		}
+		
+		Node temp = head;
+		for(int i=0; i<pos-1 && temp!=null; i++) {
+			temp = temp.next;
+		}
+		
+		if(temp == null) {
+			System.out.println("Position is out of bounds");
+			return head;
+		}
+		
+		newNode.next = temp.next;
+		temp.next = newNode;
+		
+		return head;
+	}
 
 }
