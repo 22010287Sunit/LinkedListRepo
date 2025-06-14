@@ -32,6 +32,12 @@ public class LLMain {
 		System.out.println("");
 		impl1.displayLL(node1);
 		
+		node1 = impl1.InsertAtBeginning(node1, 344);
+		System.out.println("");
+		impl1.displayLL(node1);
+		
+		
+		
 	}
 	
 
