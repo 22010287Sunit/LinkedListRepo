@@ -5,6 +5,8 @@ public class LLMain {
 		Node node2 = new Node(30);
 		Node node3 = new Node(50);
 		Node node4 = new Node();
+		Node node5 = new Node(755);
+		
 		node4.data = 60;
 		node1.next = node2;
 		node2.next = node3;
@@ -24,6 +26,10 @@ public class LLMain {
 			impl1.insertAtEnd(node1, new Node(arr[i]));
 		}
 		
+		impl1.displayLL(node1);
+		
+		impl1.InsertAtBeginning(node1, node5);
+		System.out.println("");
 		impl1.displayLL(node1);
 		
 	}

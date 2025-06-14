@@ -21,5 +21,16 @@ public class LLMethods {
 		temp.next = ToBeInserted;
 		return head;
 	}
+	
+	public Node InsertAtBeginning(Node head, int data) {
+		Node newNode = new Node(data);
+		newNode.next = head;
+		return newNode;
+	}
+	
+	public Node InsertAtBeginning(Node head, Node newHead) {
+		newHead.next = head;
+		return newHead;
+	}
 
 }
