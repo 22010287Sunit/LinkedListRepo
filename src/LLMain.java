@@ -4,15 +4,16 @@ public class LLMain {
 		Node node1 = new Node(10);
 		Node node2 = new Node(30);
 		Node node3 = new Node(50);
-		Node node4 = new Node();
+		Node node4 = new Node(45);
 		Node node5 = new Node(755);
 		Node node6 = new Node(745);
+		
 		
 		node4.data = 60;
 		node1.next = node2;
 		node2.next = node3;
 		node3.next = node4;
-		System.out.println(node1.next.next.data);
+		System.out.println("New observation: "+node1.next.next.data);
 		System.out.println(node1.data);
 		System.out.println("");
 		//Node node = node1;
