@@ -8,7 +8,7 @@ public class LLMethods {
 			node = node.next;
 		}
 	}
-	
+	// In any method of LL mostly we return node which represents first Node which can have any name
 	public Node insertAtEnd(Node head, Node ToBeInserted) {
 		if(head == null) {
 			head = ToBeInserted;
@@ -41,16 +41,29 @@ public class LLMethods {
 		
 		Node temp = head;
 		for(int i=0; i<pos-1 && temp!=null; i++) {
-			temp = temp.next;
+			temp = temp.next; // temp will arrive at the point of pos-1
 		}
 		
 		if(temp == null) {
 			System.out.println("Position is out of bounds");
 			return head;
 		}
-		
-		newNode.next = temp.next; // 
+		// Before insertion:
+		//
+		// temp ---> A ---> B
+		//
+		// We want:
+		//
+		// temp ---> newNode ---> A ---> B
+		//
+		// So first connect newNode to A,
+		// then connect temp to newNode.
+
+		newNode.next = temp.next; 
+		// newNode now points to A (remaining chain preserved)
+
 		temp.next = newNode;
+		// temp now points to newNode (insertion completed)
 		
 		return head;
 	}
