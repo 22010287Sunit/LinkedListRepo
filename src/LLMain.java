@@ -41,6 +41,12 @@ public class LLMain {
 		impl1.InsertAtGivenPosition(node1, node6, 4);
 		System.out.println("");
 		impl1.displayLL(node1);
+		System.out.println(node6.next.data+ " Last node value");
+		LLDeleteMethods delete = new LLDeleteMethods();
+		System.out.println("Calling DeleteAtStart method");
+		node1 = delete.DeleteAtStart(node1);
+		System.out.println("First node is now deleted ie 344");
+		impl1.displayLL(node1);
 		
 		
 		

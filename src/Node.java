@@ -1,14 +1,15 @@
 
 public class Node {
-	public int data;
+	public int data; // Instance Variable
 	public Node next;
+	public String info;
 	
-	public Node(int data) {
-		this.data = data;
+	public Node(int data) {// Constructer of Node class
+		this.data = data; // Local parameter Variable
 		this.next = null;
 	}
-	public Node() {
-		
+	public Node(String info) {
+		this.info = info;
 	}
 
 }
