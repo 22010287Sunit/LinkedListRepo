@@ -48,6 +48,17 @@ public class LLMain {
 		System.out.println("First node is now deleted ie 344");
 		impl1.displayLL(node1);
 		
+		node1 = delete.DeleteEndNode(node1);
+		System.out.println("Last node is now deleted ie 543 ");
+		impl1.displayLL(node1);
+		
+		node1 = delete.DeleteByVal(node1, 60);
+		System.out.println("Node with value 60 deleted");
+		impl1.displayLL(node1);
+		
+		
+		
+		
 		
 		
 	}
