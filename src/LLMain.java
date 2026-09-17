@@ -55,6 +55,10 @@ public class LLMain {
 		node1 = delete.DeleteByVal(node1, 60);
 		System.out.println("Node with value 60 deleted");
 		impl1.displayLL(node1);
+		System.out.println("");
+		node1 = delete.RemoveNthNodeFromEnd(node1, 6);
+		System.out.println("745 should not be there in list: ");
+		impl1.displayLL(node1);
 		
 		
 		
